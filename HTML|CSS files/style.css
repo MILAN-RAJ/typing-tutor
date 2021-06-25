@@ -1,0 +1,463 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
+*{
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.navigation{
+    
+    height: 3.8em;
+    position: relative;
+    z-index: 2;    
+}
+
+
+.navigation nav{
+   
+    /* display: block; */
+
+  background-color: cornflowerblue;
+
+  position: fixed;
+  width: 100%;
+ 
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    height: auto;
+
+    
+}
+ nav ul li{
+    list-style: none;
+    
+    justify-content: space-between;
+   margin: .6em 5em;
+    
+   
+}
+
+nav ul li a{
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    text-decoration: none;
+  color: aliceblue;
+  padding: 10px 10px 10px 10px;
+  justify-content: space-between;
+  align-items: center;
+ border-radius: 5px;
+  border: 2px solid rgb(210, 255, 88);
+    transition: .5s;
+    
+}
+.home-padding{
+    margin-left:8em ;
+}
+
+
+
+ nav ul li a:hover{
+    background-color: #041E42;
+    color: aqua;
+   
+      
+}
+
+
+/* --------------LOGO---------------- */
+.logo{
+    width: 3.5em;
+    height: 3.5em;
+    display: flex;
+    position: fixed;
+    top: 2.5px;
+    left: 8px;
+    
+}
+nav li{
+    list-style: none;
+}
+
+
+
+/* ---------------sub-menu------------- */
+.submenu-1{
+    display: none;
+    
+}
+nav ul li:hover .submenu-1{
+    display: block;
+    position: absolute;
+    background-color:  cornflowerblue;
+/* margin-top: 2px; */
+    margin-left: -55px; 
+  
+}
+
+nav ul li:hover .submenu-1 ul{
+    display: block;
+    margin-top: 20px;
+    margin-left: -70px;
+    margin-right: -70px;
+    
+}
+
+nav ul li:hover .submenu-1 ul li{
+    width: 180px;
+    padding: 10px;
+    border-bottom: 1px #002244;
+    border-bottom-style:solid;
+    background: transparent;
+    text-align: center;
+   
+}
+nav ul li:hover .submenu-1 ul li:last-child{
+    border-bottom: none;
+}
+nav ul li:hover .submenu-1 ul li a:hover{
+    color: #1D428A;
+    background-color: aqua;
+    
+}
+
+
+/*----------------------- main content -------------------- */
+
+
+.main-content{
+    display:flex;
+    min-height: 50vh;
+    width: 100%;
+    background-color: #5A4FCF;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/homeimage1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+
+    align-items: center;
+   
+}
+
+.main-content div{
+         margin-left: 30vw;
+    color: aliceblue;
+    
+
+}
+
+.hero-btn{
+    color: whitesmoke;
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid white;
+    font-size: 13px;
+    background: transparent;
+    padding: 10px 30px;
+    position: relative;
+    cursor: pointer;
+    
+    border-radius: 20px;
+    margin-right: 20vw;
+    /* margin-bottom: 20px;
+    margin-left: 300px;
+*/
+} 
+.hero-btn:hover{
+    background-color: rgb(240, 66, 95);
+    border: 2px solid rgb(91, 230, 126);
+    transition: .7s;
+    
+}
+
+
+
+
+
+
+/* -------------------------------------- */
+.main-content2{
+
+    text-align: center;
+font-size: 27px;
+line-height: 1.7;
+letter-spacing: 0.024em;
+font-weight: 200;
+font-style: italic;
+padding: 10px;
+}
+.main-content2 div{
+    padding: 40px 20px;
+    color:gold;
+    height: 50vh;
+    
+}
+
+
+.main-content2{
+    min-height: 30vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/img3.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+
+   
+   
+}
+.main-content2 div h3,.main-content2 div p{
+    padding: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* -----------------main contet 3------------------- */
+
+.main-content3{
+    text-align: center;
+font-size: 41px;
+line-height: 1.7;
+letter-spacing: 0.173em;
+font-weight: 300;
+font-style: normal;
+background-color: chartreuse;
+}
+
+.main-content3 div{
+    color: lightslategray;
+}
+
+/*------------------- main content 4------------------- */
+
+.main-content4{
+    text-align: center;
+font-size: 31px;
+line-height: 1.7;
+letter-spacing: 0.059em;
+font-weight: 200;
+font-style: normal;
+}
+
+.main-content4 div{
+    color: #1da1f2;
+    background-color: bisque;
+    padding: 10px 10px;
+}
+
+/* -------------footer------------ */
+.footer .a{
+    
+    display: block;
+  
+    bottom: 0;
+    background-color: #316ee7;
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    color: #A3C1AD;
+}
+.footer .b{
+    background-color: #0C2340;
+    display: block;
+    color: #40E0D0;
+    
+}
+
+.footer .b p{
+    display: inline-block;
+   
+    
+}
+
+
+
+
+
+
+
+
+
+/* ---------------BIGGNER 1 -----------------------*/
+
+.big-main-content1{
+    
+        min-height: 20vh;
+        width: 100%;
+        background-color: #316ee7;
+    text-align: center;
+       
+      
+
+}
+
+.big-main-content1 div{
+   display: inline-block;
+  
+    margin-top: 2%;
+    font-size: 35px;
+
+}
+
+.big-main-con2{
+    display: inline-block;
+    width: 100%;
+    height: 40vh;
+}
+
+.big-main-con2 div h2{
+
+    text-align: center;
+    font-size: 40px;
+    line-height: 1.5;
+font-weight: 700;
+
+}
+.big-main-con2 div .a{
+font-size: 25px;
+/* margin-left: 600px; */
+font-style: italic;
+}
+.big-main-con2 div .b{
+    font-size: large;
+}
+.big-main-con2 div .c{
+    margin-top: 20px;
+    font-size: large;
+}
+
+
+
+.big-main-con3 img{
+    width: auto;
+    margin-left: 170px;
+}
+
+.big-main-con4 div{
+    
+    margin-top:200px;
+    margin-left: 300px;
+}
+
+
+.big-main-con5 h3{
+        font-size: 37px;
+        line-height: 1.4;
+        font-weight: 700;
+        font-style: normal;
+        margin-left: 620px;
+}
+
+.big-main-con5 p{
+    font-size: 26px;
+    line-height: 1.3;
+    letter-spacing: -0.04em;
+    font-weight: 200;
+    font-style: italic;
+    padding: 10px;
+}
+
+/* ---------------exercise-------------------- */
+.ex1 h2,.ex2 h2,.ex3 h2{
+font-size: 50px;
+line-height: 2;
+letter-spacing: 0.073em;
+font-weight: 400;
+font-style: normal;
+/* padding-left: 620px; */
+text-align: center;
+border-top: 1px solid #2774AE;
+border-bottom: 1px solid #2774AE;
+color: #316ee7;
+
+}
+.ab{
+font-size: 29px;
+line-height: 2;
+letter-spacing: 0.024em;
+font-weight: 500;
+font-style: normal;
+text-align: center;
+}
+
+
+.typing{
+    font-size: 25px;
+line-height: 1.6;
+letter-spacing: 0.258em;
+font-weight: 200;
+font-style: normal;
+
+color: #1da1f2;
+padding-right: 100px;
+padding-left: 200px;
+padding-top: 15px;
+margin-right: 90px;
+}
+.ex1 input ,.ex2 input,.ex3 input{
+    width: 1089px;
+padding: 0px 8px;
+background-color: #E0FFFF;
+font-size: 19px;
+line-height: 1.6;
+letter-spacing: 9px;
+font-weight: 299;
+margin-left: 197px;
+color: #18381e;
+border: 1px solid black;
+border-radius: 4px;
+}
+
+.nextsection{
+    text-align: center;
+margin-top: 30px;
+font-size: 57px;
+line-height: 1.7;
+letter-spacing: 0.095em;
+font-weight: 200;
+font-style: normal;
+background-color: burlywood;
+color: white;
+}
+
+.ex1,.ex2,.ex3{
+    margin-top: 20px;
+}
+
+
+.hero-btn1{
+    color: whitesmoke;
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid white;
+    font-size: 13px;
+    background: transparent;
+    padding: 10px 30px;
+    position: relative;
+    cursor: pointer;
+    
+    border-radius: 20px;
+    margin-right: 20vw;
+     margin-bottom: 20px;
+    margin-left: 300px;
+
+} 
+.hero-btn1:hover{
+    background-color: rgb(4, 30, 66);
+    border: 2px solid rgb(91, 230, 195);
+    transition: .7s;
+    
+}
+
+/* .big2img1{
+    margin-left: 600px;
+} */
+
+.a,.b,.c{
+    text-align: center;
+}
